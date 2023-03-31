@@ -1,0 +1,142 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img, svg {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.fireplace {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0 100px;
+}
+
+.fireplace-block {
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+
+.fireplace-preview {
+    height: 70vh;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    min-width: 600px;
+    position: relative;
+    width: 40vw;
+}
+
+.fireplace-preview img {
+    position: absolute;
+}
+
+.option-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.option+.option {
+    margin-top: 20px;
+}
+
+.sub-options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sub-option {
+    width: 125px;
+    height: 125px;
+}
+
+.sub-option:not(:last-child) {
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.close {
+    align-self: center;
+}
+
+.tariff {
+    margin-bottom: 20px;
+}
+
+.tariff:not(:last-child) {
+    margin-right: 20px;
+}
+
+.tariff button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    background: rgb(181, 181, 181);
+    color: white;
+}
+
+.tariff.active button {
+    background: darkred;
+    color: white;
+}
+
+.option-img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+    border: 5px solid transparent;
+}
+
+.sub-option.active .option-img {
+    border: 5px solid darkred;
+}
+
+.sub-option span {
+    font-size: 18px;
+}
+
+.price {
+    font-size: 20px;
+    color: darkred;
+    font-weight: 600;
+    text-align: center;
+}
+
+.price span {
+    color: red;
+}
